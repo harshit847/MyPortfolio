@@ -71,6 +71,7 @@ body {
   align-items: center;
   gap: 1rem;
   margin-bottom: 1rem;
+  margin-top: 7rem;
 }
 
 .hero-avatar {
@@ -104,4 +105,76 @@ body {
   font-size: 0.9rem;
   color: var(--secondary-text);
   max-width: 600px;
+}
+
+.tech-section {
+  padding: 40px 20px;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--accent-color);
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.tech-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tech-table th,
+.tech-table td {
+  padding: 10px 16px;
+  background-color: var(--cell-bg);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tech-table th {
+  background-color: var(--th-bg);
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .tech-table,
+  .tech-table thead,
+  .tech-table tbody,
+  .tech-table th,
+  .tech-table td,
+  .tech-table tr {
+    display: block;
+    width: auto;
+  }
+
+  .tech-table tr {
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    padding: 10px;
+    background-color: var(--card-bg);
+  }
+
+  .tech-table th {
+    font-size: 1.2rem;
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .tech-table td {
+    display: inline-block;
+    background-color: transparent;
+    margin: 5px 5px 5px 0;
+    border: none;
+    padding: 6px 10px;
+    background-color: var(--card-bg);
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  }
 }

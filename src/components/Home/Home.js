@@ -45,7 +45,7 @@ export default function Home() {
         className="hero-title"
       >
         Harshit Rai
-      <img src="/assets/myImage.jpg" alt="" 
+        <img src="/assets/myImage.jpg" alt=""
           className="hero-avatar"
         />
       </motion.h1>
@@ -76,6 +76,35 @@ export default function Home() {
       >
         {stats}
       </motion.p>
+      <section class="tech-section">
+        <h2 class="section-title">Tech Stack</h2>
+
+        <div class="table-wrapper">
+          <table class="tech-table">
+            <tr>
+              <th>Skills</th>
+              <td>⚛️ React</td>
+              <td>🟨 Node.js</td>
+              <td>📜 JavaScript</td>
+              <td>🎨 HTML & CSS</td>
+              <td>💨 Tailwind CSS</td>
+              <td>🚂 Express.js</td>
+              <td>🔄 Redux</td>
+            </tr>
+            <tr>
+              <th>Tools</th>
+              <td>🔧 Git</td>
+              <td>🐙 GitHub</td>
+              <td>🖊️ VSCode</td>
+              <td>📬 Postman</td>
+              <td>🍃 MongoDB</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+
+
     </div>
   );
 }
