@@ -1,0 +1,122 @@
+.projects-container {
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 2rem 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .back{
+    display: inline-block; 
+    padding: 10px;
+    cursor: pointer;
+    font-size: x-large;
+  }
+  
+  .projects-heading {
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: var(--highlight);
+  }
+  
+  .projects-subheading {
+    color: var(--subtext-color);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  
+  .projects-divider {
+    border-top: 2px solid var(--divider-color);
+    margin: 2rem auto;
+    width: 97%;
+  }
+  
+  .projects-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .projects-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .project-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    padding: 1.5rem;
+    color: var(--text-color);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    background: var(--card-hover);
+  }
+  
+  .project-date {
+    font-size: 0.9rem;
+    color: var(--subtext-color);
+    margin-bottom: 0.3rem;
+  }
+  
+  .project-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--highlight);
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: var(--subtext-color);
+    margin-bottom: 1rem;
+  }
+  
+  .project-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: var(--subtext-color);
+    flex-wrap: wrap;
+  }
+  
+  .project-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .project-tag {
+    background-color: var(--tag-bg);
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    color: var(--text-color);
+    margin-top: 0.5rem;
+  }
+  
+  .github-icon {
+    display: inline-block;
+    margin-top: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .github-icon img {
+    width: 26px;
+    height: 26px;
+    filter: invert(1);
+  }
+  
+  .github-icon:hover img {
+    transform: scale(1.15);
+    filter: brightness(120%);
+  }
