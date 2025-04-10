@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import myImage from '../../assets/myImage.jpg';
 
 export default function Home() {
   const [stats, setStats] = useState("Loading...");
@@ -46,9 +45,7 @@ export default function Home() {
         className="hero-title"
       >
         Harshit Rai
-        <img
-          src={myImage}
-          alt="avatar"
+      <img src="/assets/myImage.jpg" alt="" 
           className="hero-avatar"
         />
       </motion.h1>
